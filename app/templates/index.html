@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML no Flask</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block conteudo %}
     <Section>
-        <h1>Olá Giro!!! Tá Saindo!!! Continua estudando cacete!</h1>
+        <h1>Olá {{nome}}!!! Tá Saindo!!! Continua estudando cacete!</h1>
+        <h2>Santos tutoriais da internet, pqp!</h2>
+        <p>Profissão: {{dados.profissao}}</p> <br>
+        <p>Nome: {{dados.Raça}}</p>
     </Section>
-</body>
-</html>
+
+    {% endblock %}
